@@ -24,5 +24,5 @@ depths = open_file_get_integers_list('d1q1_input.txt')
 
 numOfIncreases = count_increases(depths)
 
-print(numOfIncreases)
+print(f"Number of increases: {numOfIncreases}")
 

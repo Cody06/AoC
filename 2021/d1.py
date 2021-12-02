@@ -7,7 +7,7 @@ def sonar_sweep(depths: 'List[int]') -> int:
 	count = 0
 	for i in range(1, len(depths)):
 		if depths[i - 1] < depths[i]:		# increase if d(109) < d(200)
-			count += 1
+			count += 1						# count += depths[i -1] < depths[i]  <- True == 1, False == 0
 
 	return count
 

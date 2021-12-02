@@ -25,6 +25,7 @@ def sonar_sweep_window(depths: 'List[int]') -> int:
 
 	return sonar_sweep(threeDepthsSums)		# previous question is a helper function
 
+
 if __name__ == '__main__':
 	depths = []
 

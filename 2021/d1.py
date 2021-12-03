@@ -7,7 +7,7 @@ def sonar_sweep(depths: 'List[int]') -> int:
 	count = 0
 	for i in range(1, len(depths)):
 		if depths[i - 1] < depths[i]:		# increase if d(109) < d(200)
-			count += 1						# count += depths[i -1] < depths[i]  <- True == 1, False == 0
+			count += 1						   # count += depths[i -1] < depths[i]  <- True == 1, False == 0
 
 	return count
 
@@ -30,7 +30,7 @@ if __name__ == '__main__':
 	depths = []
 
 	with open('d1_input.txt') as f:					# open file in read mode and automatically close it (no need for f.close())
-		for line in f:								# iterate line by line
+		for line in f:								      # iterate line by line
 			depths.append(int(line.strip('\n')))	# store each formatted depth in the depths list
 
 	print(f"Answer 1: {sonar_sweep(depths)}")

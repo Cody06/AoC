@@ -1,3 +1,3 @@
 # AoC
 
-Personal answers to Advent of Code 2021.
+Personal solutions to Advent of Code 2021.

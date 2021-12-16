@@ -19,11 +19,11 @@ def sonar_sweep_window(depths: 'List[int]') -> int:
 		input: list of integers
 		output: an integer
 	'''
-	threeDepthsSums = []			# list of the sum of three consecutive depths 
+	three_depths_sums = []			# list of the sum of three consecutive depths 
 	for i in range(2, len(depths)):
-		threeDepthsSums.append(depths[i - 2] + depths[i - 1] + depths[i])
+		three_depths_sums.append(depths[i - 2] + depths[i - 1] + depths[i])
 
-	return sonar_sweep(threeDepthsSums)		# previous question is a helper function
+	return sonar_sweep(three_depths_sums)		# previous question is a helper function
 
 
 if __name__ == '__main__':
